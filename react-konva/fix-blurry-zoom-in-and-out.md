@@ -3,6 +3,10 @@
 ```tsx
 import type { Layer as KonvaLayer } from "konva/lib/Layer";
 
+// In the component
+const containerRef = useRef<HTMLDivElement | null>(null);
+const layerRef = useRef<KonvaLayer | null>(null);
+
 // Capture the state
 const [measurements, setMeasurements] = useState<{
   dpr: number;
