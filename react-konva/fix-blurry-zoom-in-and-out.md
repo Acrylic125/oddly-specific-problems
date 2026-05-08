@@ -41,7 +41,7 @@ useEffect(() => {
 
 return <div ref={containerRef}>
   <Stage
-    pixelRatio={pixelRatio}
+    pixelRatio={measurements.dpr}
   >
     <Layer ref={layerRef}></Layer>
   </Stage>
