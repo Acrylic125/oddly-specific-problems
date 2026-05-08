@@ -39,16 +39,12 @@ useEffect(() => {
   layerRef.current?.batchDraw();
 }, [measurements.dpr]);
 
-return <div
-    className="w-full max-w-7xl overflow-x-hidden h-fit absolute"
-    ref={containerRef}
+return <div ref={containerRef}>
+  <Stage
+    pixelRatio={pixelRatio}
   >
-    <Stage
-      pixelRatio={pixelRatio}
-    >
-      <Layer ref={layerRef}>
-      </Layer>
-    </Stage>
-  </div>
+    <Layer ref={layerRef}></Layer>
+  </Stage>
+</div>
 ```
 
