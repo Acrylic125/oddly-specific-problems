@@ -1,6 +1,4 @@
-# Problem
-Reacvt Konva does not automatically update the device pixel ratio when you zoom in/out.
-
+# Fix Blurry Zoom In and Out of React Konva
 ## Solution
 ```tsx
 import type { Layer as KonvaLayer } from "konva/lib/Layer";
